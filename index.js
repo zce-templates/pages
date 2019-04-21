@@ -1,5 +1,4 @@
 const path = require('path')
-const chalk = require('chalk')
 
 const date = new Date()
 
@@ -48,8 +47,8 @@ module.exports = {
 
     console.log('✨  To get started:')
     console.log()
-    dest === cwd || console.log(chalk.cyan(`   $ cd ${path.relative(cwd, dest)}`))
-    console.log(chalk.cyan('   $ yarn'))
+    dest === cwd || console.log(`   $ cd ${path.relative(cwd, dest)}`)
+    console.log('   $ yarn')
     console.log()
     console.log('👻  Good luck :)')
   }
