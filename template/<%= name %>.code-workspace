@@ -18,7 +18,7 @@
     "files.exclude": {
       "node_modules": true,
       "temp": true,
-      "pages.code-workspace": true
+      "<%= name %>.code-workspace": true
     }
   }
 }
