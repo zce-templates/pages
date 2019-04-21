@@ -1,0 +1,45 @@
+{
+  "name": "@zce-templates/pages",
+  "version": "0.1.0",
+  "description": "A template for generating static pages site by zce-cli",
+  "keywords": [
+    "pages",
+    "zce-templates",
+    "zce-cli",
+    "zce"
+  ],
+  "homepage": "https://github.com/zce-templates/pages#readme",
+  "bugs": {
+    "url": "https://github.com/zce-templates/pages/issues"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "zce",
+    "email": "w@zce.me",
+    "url": "https://zce.me"
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zce-templates/pages.git"
+  },
+  "scripts": {
+    "test": "standard --fix && ava --verbose"
+  },
+  "devDependencies": {
+    "ava": "^1.4.1",
+    "mock-prompt": "^0.1.4",
+    "standard": "^12.0.1",
+    "zce-cli": "^0.2.0-alpha.11"
+  },
+  "ava": {
+    "files": [
+      "test/*.test.js"
+    ]
+  },
+  "standard": {
+    "ignore": [
+      "template"
+    ]
+  }
+}

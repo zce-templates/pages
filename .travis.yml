@@ -1,0 +1,23 @@
+sudo: false
+
+os:
+  - osx
+  - windows
+  - linux
+
+language: node_js
+
+node_js:
+  - lts/*
+  - stable
+
+cache:
+  yarn: true
+
+notifications:
+  email:
+    on_success: never
+    on_failure: change
+
+script:
+  - yarn test
