@@ -12,9 +12,12 @@
 
 ```shell
 $ yarn <task> [options]
+```
 
-# e.g.
-$ yarn serve --port 5210
+### e.g.
+
+```shell
+$ yarn serve --port 5210 --open
 $ yarn build --production
 ```
 
@@ -23,10 +26,6 @@ $ yarn build --production
 ### lint
 
 Lint styles & scripts files.
-
-### clean
-
-Clean dist & temp files.
 
 ### compile
 
@@ -45,6 +44,8 @@ Running an automated development server.
 
 Build the entire project to get releasable files.
 
+#### options
+
 - `production`: Production mode, Default: `false`
 - `prod`: Alias to `production`
 
@@ -55,7 +56,7 @@ Running projects in production mode.
 #### options
 
 - `port`: Server port, Default: `2080`
-- `open`: Automatically open browser, Default: `true`
+- `open`: Automatically open browser, Default: `false`
 
 ### deploy
 
@@ -65,40 +66,44 @@ Deploy build results to [GitHub Pages](https://pages.github.com).
 
 - `branch`: The name of the branch you'll be pushing to, Default: `'gh-pages'`
 
+### clean
+
+Clean dist & temp files.
+
 ## Folder Structure
 
 ```
-└── my-project ··································································· proj root
-   ├─ public ····································································· static
-   │  └─ .gitkeep ································································ static file (unprocessed)
-   ├─ src ········································································ source
-   │  ├─ assets ·································································· assets
-   │  │  ├─ fonts ································································ fonts
-   │  │  │  └─ .gitkeep ·························································· font file
-   │  │  ├─ images ······························································· images
-   │  │  │  └─ .gitkeep ·························································· image file
-   │  │  ├─ scripts ······························································ scripts (babel / uglify)
-   │  │  │  └─ .gitkeep ·························································· script file
-   │  │  └─ styles ······························································· styles (scss / postcss)
-   │  │     ├─ _variables.scss ··················································· partial file (dont output)
-   │  │     └─ main.scss ························································· entry scss file
-   │  ├─ layouts ································································· layouts (dont output)
-   │  │  └─ basic.html ··························································· layout file
-   │  ├─ partials ································································ partials (dont output)
-   │  │  ├─ footer.html ·························································· partial file
-   │  │  └─ header.html ·························································· partial file
-   │  ├─ about.html ······························································ page file (use layout & partials)
-   │  └─ index.html ······························································ page file (use layout & partials)
-   ├─ .csscomb.json ······························································ csscomb config file
-   ├─ .editorconfig ······························································ editor config file
-   ├─ .gitignore ································································· git ignore file
-   ├─ .travis.yml ································································ travis ci config file
-   ├─ CHANGELOG.md ······························································· repo changelog
-   ├─ LICENSE ···································································· repo license
-   ├─ README.md ·································································· repo readme
-   ├─ gulpfile.js ································································ gulp tasks file
-   ├─ package.json ······························································· package file
-   └─ yarn.lock ·································································· yarn lock file
+└── my-pages ········································· proj root
+   ├─ public ········································· static dir
+   │  └─ favicon.ico ································· static file (unprocessed)
+   ├─ src ············································ source dir
+   │  ├─ assets ······································ assets dir
+   │  │  ├─ fonts ···································· fonts dir
+   │  │  │  └─ pages.ttf ····························· font file (imagemin)
+   │  │  ├─ images ··································· images dir
+   │  │  │  └─ logo.png ······························ image file (imagemin)
+   │  │  ├─ scripts ·································· scripts dir
+   │  │  │  └─ main.js ······························· script file (babel / uglify)
+   │  │  └─ styles ··································· styles dir
+   │  │     ├─ _variables.scss ······················· partial sass file (dont output)
+   │  │     └─ main.scss ····························· entry scss file (scss / postcss)
+   │  ├─ layouts ····································· layouts dir
+   │  │  └─ basic.html ······························· layout file (dont output)
+   │  ├─ partials ···································· partials dir
+   │  │  ├─ footer.html ······························ partial file (dont output)
+   │  │  └─ header.html ······························ partial file (dont output)
+   │  ├─ about.html ·································· page file (use layout & partials)
+   │  └─ index.html ·································· page file (use layout & partials)
+   ├─ .csscomb.json ·································· csscomb config file
+   ├─ .editorconfig ·································· editor config file
+   ├─ .gitignore ····································· git ignore file
+   ├─ .travis.yml ···································· travis ci config file
+   ├─ CHANGELOG.md ··································· repo changelog
+   ├─ LICENSE ········································ repo license
+   ├─ README.md ······································ repo readme
+   ├─ gulpfile.js ···································· gulp tasks file
+   ├─ package.json ··································· package file
+   └─ yarn.lock ······································ yarn lock file
 ```
 
 ## Contributing
