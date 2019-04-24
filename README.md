@@ -19,7 +19,7 @@ $ zce init pages my-project
 
 ## License
 
-[MIT](LICENSE) &copy; zce <w@zce.me> (https://zce.me)
+[MIT](LICENSE) &copy; [汪磊](https://zce.me)
 
 
 
