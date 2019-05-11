@@ -24,7 +24,8 @@
     "files.exclude": {
       "node_modules": true,
       "temp": true,
-      "<%= name %>.code-workspace": true
-    }
+      // "<%= name %>.code-workspace": true
+    },
+    "terminal.integrated.cwd": ""
   }
 }

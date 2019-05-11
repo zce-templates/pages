@@ -1,6 +1,7 @@
 # <%= name %>
 
 [![Build Status][travis-image]][travis-url]
+[![Package Version][version-image]][version-url]
 [![License][license-image]][license-url]
 [![Dependency Status][dependency-image]][dependency-url]
 [![devDependency Status][devdependency-image]][devdependency-url]
@@ -124,8 +125,10 @@ Clean the `dist` & `temp` files.
 
 
 
-[travis-image]: https://travis-ci.org/<%= github %>/<%= name %>.svg?branch=master
+[travis-image]: https://img.shields.io/travis/<%= github %>/<%= name %>.svg
 [travis-url]: https://travis-ci.org/<%= github %>/<%= name %>
+[version-image]: https://img.shields.io/github/package-json/v/<%= github %>/<%= name %>.svg
+[version-url]: https://github.com/<%= github %>/<%= name %>
 [license-image]: https://img.shields.io/github/license/<%= github %>/<%= name %>.svg
 [license-url]: https://github.com/<%= github %>/<%= name %>/blob/master/LICENSE
 [dependency-image]: https://img.shields.io/david/<%= github %>/<%= name %>.svg
