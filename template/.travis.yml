@@ -13,6 +13,9 @@ notifications:
     on_success: never
     on_failure: change
 
+install:
+  - yarn
+
 script:
   - yarn lint
   - yarn build --production

@@ -31,3 +31,5 @@ $ zce init pages my-project
 [devdependency-url]: https://david-dm.org/zce-templates/pages?type=dev
 [style-image]: https://img.shields.io/badge/code_style-standard-brightgreen.svg
 [style-url]: http://standardjs.com
+
+<!-- https://github.com/zce/pages-boilerplate/compare/e5087340fe6a2a2320dd1c1aab532e47589e1e17...master -->

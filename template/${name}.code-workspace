@@ -1,31 +1,36 @@
 {
-	"folders": [
-		{
+  "folders": [
+    {
       "name": "src",
-			"path": "src"
-		},
-		{
-      "name": "dist",
-			"path": "dist"
-		},
-		{
-      "name": "root",
-			"path": "."
-		}
-	],
-	"extensions": {
-		"recommendations": [
-      "editorconfig.editorconfig",
-      "batisteo.vscode-django"
-		]
-	},
-	"settings": {
-    "explorer.openEditors.visible": 0,
-    "files.exclude": {
-      "node_modules": true,
-      "temp": true,
-      // "<%= name %>.code-workspace": true
+      "path": "src"
     },
-    "terminal.integrated.cwd": ""
+    {
+      "name": "dist",
+      "path": "dist"
+    },
+    {
+      "name": "root",
+      "path": "."
+    }
+  ],
+  "extensions": {
+    "recommendations": [
+      "editorconfig.editorconfig",
+      "zhutian.swig"
+    ]
+  },
+  "settings": {
+    "explorer.openEditors.visible": 0,
+    "files.associations": {
+      "*.html": "swig"
+    },
+    "files.exclude": {
+      "dist": true,
+      "node_modules": true,
+      "src": true,
+      "temp": true,
+      "*.code-workspace": false
+    },
+    "terminal.integrated.cwd": "."
   }
 }
